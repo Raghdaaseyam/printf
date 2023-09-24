@@ -3,10 +3,10 @@
 /************************* WRITE HANDLE *************************/
 /**
  * handle_write_char - Prints a string
- * @c: char types.
+ * @c: character types.
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags.
- * @width: get width.
+ * @width: width.
  * @precision: precision specifier
  * @size: Size specifier
  *
@@ -48,10 +48,10 @@ int handle_write_char(char c, char buffer[],
 /**
  * write_number - Prints a string
  * @is_negative: Lista of arguments
- * @ind: char types.
+ * @ind: characters types.
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
- * @width: get width.
+ * @width:  width.
  * @precision: precision specifier
  * @size: Size specifier
  *
@@ -250,7 +250,3 @@ int write_pointer(char buffer[], int ind, int length,
 		buffer[--ind] = extra_c;
 	return (write(1, &buffer[ind], BUFF_SIZE - ind - 1));
 }
-
-
-
-
